@@ -21,6 +21,8 @@
  */
 #pragma once
 
+#define CONFIG_EXAMPLES_DIR "Mks/Robin_Lite3"
+
 /**
  * Configuration_adv.h
  *
@@ -1533,7 +1535,7 @@
    * respectfully request that you retain the unmodified Marlin boot screen.
    */
   #if ANY(HAS_MARLINUI_U8GLIB, TOUCH_UI_FTDI_EVE, IS_DWIN_MARLINUI)
-    #define SHOW_BOOTSCREEN                 // Show the Marlin bootscreen on startup. ** ENABLE FOR PRODUCTION **
+    //#define SHOW_BOOTSCREEN               // Show the Marlin bootscreen on startup. ** ENABLE FOR PRODUCTION **
     #if ENABLED(SHOW_BOOTSCREEN)
       #define BOOTSCREEN_TIMEOUT 4000       // (ms) Total Duration to display the boot screen(s)
       #if EITHER(HAS_MARLINUI_U8GLIB, TFT_COLOR_UI)
